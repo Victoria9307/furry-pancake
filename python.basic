@@ -1,0 +1,100 @@
+"""
+Q.1 1야드(yd)는 91.44cm이고 1인치(in)는 2.54cm이다.
+2.1야드와 10.5인치를 각각 cm로 변환하여 다음 형식에 맞추어 소수 첫째자리까지 출력하시오.
+출력 예:
+2.1yd = 192.0cm
+10.5in = 26.7cm
+
+""" Answer
+yard = 91.44
+inch = 2.54
+x=yard*2.1
+y=inch*10.5
+print("2.1yd =",(round(x, 1)), "cm")
+print("10.5in =",(round(y, 1)), "cm")
+
+
+
+"""
+Q.2문자열을 입력받은 뒤 그 문자열을 이어서 두 번 출력하는 프로그램을 작성하시오.
+문자열의 길이는 100이하이다.
+입력 예: ASDFG
+출력 예: ASDFGASDFG
+Enter a string: asdfg
+asdfgasdfg
+""" Answer
+input("Please enter keyword")
+htp = "ASDFG"
+print(htp [0]+htp [1]+htp [2]+htp [3]+htp [4]+htp [0]+htp [1]+htp [2]+htp [3]+htp [4])
+
+
+
+"""
+Q.3 문자열을 입력받고 정수를 입력 받아서 문자열의 맨 뒤부터 정수만큼 출력하는 프로그램을 작성하시오.
+만약 입력받은 정수가 문자열의 길이보다 크다면 맨 뒤부터 맨 처음까지 모두 출력한다.
+입력 예: korea 3
+출력 예: aer
+""" Answer
+word = "korea 3"
+print(word[4], word[3], word[2])
+
+
+
+
+"""
+Q.4 단어와 문자 한 개를 입력받아서 단어에서 입력받은 문자와 같은 문자를 찾아서 그 위치를 출력하는 프로그램을 작성하시오.
+입력 예: Jungol.co.kr o
+출력 예: 4
+""" Answer
+word = input("Enter the word please : ")
+alphabet = input("Enther the alphabet please : ")
+print(word.find(str(alphabet)))
+
+"""
+Q.5 문자열(100자 이하)을 입력받은 후 정수를 입력받아 해당위치의 문자를 제거하고 출력하는 프로그램을작성하시오.
+입력 예1: word 3 출력 예: wod
+""" Answer
+# word = input("Type in : ")
+
+
+
+"""
+Q.6 20개 이하의 문자로 이루어진 10개의 단어와 한 개의 문자를 입력받아서 마지막으로 입력받은 문자로 끝나는 단어를 모두 출력하는 프로그램을 작성하시오.
+입력 예:
+champion
+tel
+pencil
+olympiad
+class
+information
+jungol
+lesson
+book
+lion
+l <<<<알파벳 엘입니다.
+출력 예:
+tel
+pencil
+jungol
+""" Answer
+word_list=input("Please inser Word : ").split(',')
+end_word=input("What is the last Alphabet? : ")
+
+for i  in  word_list : 
+     if i[-1] == end_word :
+         print(i,end='')
+
+
+"""
+Q.7 두 개의 문자열 A와 B 한 개의 정수 n을 입력받아서 A에 B를 연결하고, 변경된 문자열 A에서 n개의 문자를 B에 복사한 후 A와 B를 출력하는 프로그램을 작성하시오. (1≤n,A,B≤100)
+입력 예: banana apple 3
+출력 예:
+bananaapple
+banle
+입력 예2: orange watermelon 5
+출력 예2:
+orangewatermelon
+orangmelon
+""" Answer 
+
+
