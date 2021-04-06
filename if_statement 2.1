@@ -30,6 +30,8 @@ if age >= 20 :
 else : 
     print("Adult in",20 - int(age), "years later.")
 
+
+
 # Q.4 복싱체급은 몸무게가 50.80kg 이하를 Flyweight 61.23kg 이하를 Lightweight, 72.57kg 이하를 Middleweight, 88.45kg 이하를 Cruiserweight, 88.45kg 초과를 Heavyweight라고 하자.
 # 몸무게를 입력받아 체급을 출력하는 프로그램을 작성하시오.
 # 입력 예: 87.3
@@ -48,8 +50,20 @@ elif weight >= 88.46 :
     print("Heavyweight")
 
 
+
 # Q.5 두 개의 실수를 입력받아 모두 4.0 이상이면 "A", 모두 3.0 이상이면 "B", 아니면 "C" 라고 출력하는 프로그램을 작성하시오.
 # 입력 예1: 4.3 3.5
 # 출력 예1: B
 # 입력 예2: 4.0 2.9
 # 출력 예2: C
+
+x = float(input("First score please : "))
+y = float(input("Second score please : "))
+if x+y >= 8.0 :
+    print("A")
+if x >= 3.0 and y >= 3.0 :
+    print("B")
+else :
+    print("C")
+
+
