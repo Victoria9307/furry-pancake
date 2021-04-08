@@ -141,3 +141,21 @@ if month in list2 :
     
     
 
+
+# Q.10 공백을 포함한 문자열을 입력받아 각 단어로 분리하여 문자열 배열에 저장한 후 입력순서의 반대 순서로 출력하는 프로그램을 작성하시오. 문자열의 길이는 100자 이하이다.
+# 입력 예: C++ Programing jjang!!
+# 출력 예:
+# jjang!!
+# Programing
+# C++
+
+
+x = str(input("Sentence please : "))
+if len(x) == 0 :
+    print(x)
+else :
+    x = x.split()
+    y = " ".join(list(x[::-1]))
+    print(y)
+    
+
