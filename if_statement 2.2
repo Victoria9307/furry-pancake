@@ -81,6 +81,45 @@ if x in list_1 :
     print("소문자 입니다.")
 if x in list_2 :
     print("대문자 입니다.")
+    
+    
 
+# Q. 7가상의 두 사람(A, B)이 가위 바위 보 중 하나를 내서 승패를 가르는 가위 바위 보 게임을 작성하십시오.
+# 이 때 ["가위", "바위", "보"] 리스트를 활용합니다.
+# 입력 예: "가위" "바위"
+# 출력 예: "B가 이겼습니다."
+
+x = str(input("1st Player : "))
+y = str(input("2nd Player : "))
+list = ["가위", "바위", "보"]
+
+if x == "가위" and y == "바위" :
+    print("2nd Player wins!")
+elif x == "바위" and y == "보" :
+    print("2nd Player wins!")
+elif x == "보" and y == "가위" :
+    print("2nd Player wins!")
+elif y == "가위" and x == "바위" :
+    print("2nd Player wins!")
+elif y == "바위" and x == "보" :
+    print("2nd Player wins!")
+elif y == "보" and x == "가위" :
+    print("2nd Player wins!")
+
+
+
+    
+#Q8.다음의 결과와 같이 입력된 문자가 대문자일 경우 소문자로, 소문자일 경우 대문자로 변경하고,
+#알파벳이 아닐 경우엔 그냥 출력하는 코드를 작성하십시오.
+#입력 예1: A
+#출력 예1: a
+#입력 예2: 가나다
+#출력 예2: 가나다
+
+x = str(input("Input word please :"))
+if x.isupper() :
+    print(x.lower())
+else :
+    print(x)
 
 
