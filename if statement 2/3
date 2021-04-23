@@ -1,0 +1,10 @@
+Q.3  입력 받아서 시간과 분으로 변환하는 프로그램을 작성하시오.
+입력 예: 3598
+출력 예: 59분 58초
+
+
+time = float(input("Time please: "))
+hour = round(time//3600)
+min = round(time//60)
+sec = round(time %60)
+print(hour,"시간",min,"분",sec,"초")
