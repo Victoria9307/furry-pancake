@@ -1,0 +1,18 @@
+Q.7 10개의 정수를 입력받아 리스트에 저장한 후 짝수 번째 입력된 값의 합과 홀수 번째 입력된 값의 평균을 출력하는 프로그램을 작성하시오.
+평균은 반올림하여 소수첫째자리까지 출력한다.
+입력 예: 95 100 88 65 76 89 58 93 77 99
+출력 예:
+sum : 446
+avg : 78.8
+
+
+points = []
+sum = 0
+avg = 0
+for _ in range (10) :
+    points.append(int(input("Enter points please : ")))
+sum = points[1]+points[3]+points[5]+points[7]+points[9]
+
+avg = (points[0]+points[2]+points[4]+points[6]+points[8])/5
+print("짝수 입력된 점수들의 합산 :",sum, "점 입니다.")
+print("홀수 입력된 점수들의 평균값 :",avg, "점 입니다.")
