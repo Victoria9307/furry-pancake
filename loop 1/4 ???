@@ -23,5 +23,18 @@ none
 
 
 
-print("각 나라의 수도",'\n',"Korea = Seoul",'\n',"USA = Washington",'\n',"Japan = Tokyo",'\n',"China = Beijing")
-list = []
+
+dic = ['Seoul','Washington','Tokyo','Beijing']
+
+while True:
+    print("대한민국 = 서울(Seoul)")
+    print("미국 = 워싱턴(Washington)")
+    print("일본 = 동경(Tokyo)")
+    print("중국 = 북경(Beijing)")
+    num = int(input("numbers? "))
+    
+    if num >=5 or num<=0:
+        print('none')
+        break
+    else:
+        print(dic[num-1])
