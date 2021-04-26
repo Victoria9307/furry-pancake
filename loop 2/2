@@ -1,0 +1,18 @@
+# Q.2 자연수 n을 입력받아 "출력 예"와 같이 공백으로 구분하여 출력하는 프로그램을 작성하시오.¶
+# 입력 예: 3
+#     1 
+#   1 2 
+# 1 2 3 
+
+
+
+
+num = int(input("Number please: "))
+for y in range(num):
+    for x in range(y-num+2,y+2):
+        if x <1:
+            st = ' '
+        else:
+            st =x
+        print(' ',end=str(st))
+    print()
