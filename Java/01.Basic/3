@@ -7,6 +7,8 @@ public class Basic3 {
 		int c = 30;
 		
 		System.out.println(a + " + " + b + " = " + c);
+		// or 
+		System.out.printf("%d + %d = %d", a,b,c);
 
 	}
 
