@@ -1,0 +1,18 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Basic5 {
+
+	public static void main(String[] args) {
+		Scanner input;
+		input = new Scanner(System.in);
+		
+		System.out.println("Yard?: ");
+		double a = input.nextDouble();
+		double cm = 91.44;
+		double x = a*cm;
+		
+		System.out.printf(a+" Yard = "+String.format("%.1f",x)+"cm");
+	}
+}
