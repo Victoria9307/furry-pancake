@@ -1,0 +1,33 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Condition2 {
+
+	public static void main(String[] args) {
+		Scanner input;
+		input = new Scanner(System.in);
+		
+		System.out.printf("Alphabet please: ");
+		String x = input.next();
+		
+		if (x.equals("A")) {
+			System.out.println("Excellent");
+		}
+		else if (x.equals("B")) {
+			System.out.println("Good");
+		}
+		else if (x.equals("C")) {
+			System.out.println("Usually");
+		}
+		else if (x.equals("D")) {
+			System.out.println("Effort");
+		}
+		else if (x.equals("F")) {
+			System.out.println("Failure");
+		}
+		else {
+			System.out.println("Error");
+		}	
+	}
+}
