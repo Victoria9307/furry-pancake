@@ -1,0 +1,28 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class BasicOperators1 {
+	public static void main(String[] args) {
+		
+	Scanner input;
+	input = new Scanner(System.in);
+	
+	System.out.printf("First Number?: ");
+	int a = input.nextInt();
+	System.out.printf("Second Number?: ");
+	int b = input.nextInt();
+	if(a > b) {
+		System.out.printf("0");
+	}
+		else if (a >= b) {		
+			System.out.printf("0");
+		}
+		else if (a < b) {
+			System.out.printf("1");
+		}
+			else {
+				System.out.printf("1");
+			}
+		}
+	}
