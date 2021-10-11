@@ -1,0 +1,28 @@
+package selfStudy;
+import java.util.Scanner;
+
+public class BasicOperator {
+	public static void main(String[] args) {
+		Scanner input;
+		input = new Scanner(System.in);
+		
+		System.out.printf("Minsoo Height?: ");
+		int minH = input.nextInt();
+		System.out.printf("Minsoo Weight?: ");
+		int minW = input.nextInt();
+		
+		System.out.printf("Gayoung Height?: ");
+		int gaH = input.nextInt();
+		System.out.printf("Gayoung Weight?: ");
+		int gaW = input.nextInt();
+		
+		if (minH < gaH) {
+			System.out.print(0);}
+		else if (minH > gaH) {
+			 if (minW > gaW) {
+				System.out.print(1);}
+			 else {System.out.print(0);}}
+		else {
+			System.out.print(0);}
+			}
+		}
