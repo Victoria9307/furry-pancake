@@ -1,0 +1,27 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Basic4 {
+	public static void main(String[] args) {
+	
+	Scanner input;
+	input = new Scanner(System.in);
+	
+	System.out.print("First Number?: ");
+	int a = input.nextInt();
+	
+	System.out.print("Second Number?: ");
+	int b = input.nextInt();
+	
+	System.out.print("Third Number?: ");
+	int c = input.nextInt();
+	
+	int sum = a + b + c;
+	int avg = sum/3;
+			
+	System.out.println("Sum: "+ sum + "\n" + "Avg: " + avg);
+	
+	}
+
+}
