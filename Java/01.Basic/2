@@ -1,0 +1,16 @@
+package selfStudy;
+
+import java.io.*;
+
+public class Basic2 {
+	public static void main(String[] args) {
+  	String a = "TTTTTTTTTT"+"\n";
+		String b = "    TT"+"\n";
+		int no1= 2;
+		int no2= 3;
+		System.out.printf(a.repeat(no1)+b.repeat(no2));
+	} }
+
+
+
+##
