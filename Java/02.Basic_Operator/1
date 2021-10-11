@@ -13,16 +13,16 @@ public class BasicOperators1 {
 	System.out.printf("Second Number?: ");
 	int b = input.nextInt();
 	if(a > b) {
-		System.out.printf("0");
+		System.out.print(0);
 	}
 		else if (a >= b) {		
-			System.out.printf("0");
+			System.out.print(0);
 		}
 		else if (a < b) {
-			System.out.printf("1");
+			System.out.print(1);
 		}
 			else {
-				System.out.printf("1");
+				System.out.print(1);
 			}
 		}
 	}
