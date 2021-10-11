@@ -1,0 +1,26 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Condition1 {
+	public static void main(String[] args) {
+
+		Scanner input;
+		input = new Scanner(System.in);
+		
+		System.out.printf("Number please: ");
+		int num = input.nextInt();
+		
+		if (num == 0) {
+			System.out.println("Zero");
+		}
+		else if (num%2 == 0) {
+			System.out.println("Plus");
+		}
+		else {
+			System.out.println("Minus");
+			}
+		
+	}
+
+}
