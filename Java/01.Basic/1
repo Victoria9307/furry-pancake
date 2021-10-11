@@ -3,7 +3,7 @@ package selfStudy;
 
 import java.util.Scanner;
 
-public class SelfStudy1 {
+public class Basic1 {
 	public static void main(String args[]) {
 	
 		Scanner input;
