@@ -1,0 +1,19 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop1_02 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Number please: ");
+		int n = scan.nextInt();
+		int sum = 0;
+		
+		for (; n <= 100; n++)
+		sum += n;
+		int x = sum;
+
+		System.out.println(x);			
+		}
+}
