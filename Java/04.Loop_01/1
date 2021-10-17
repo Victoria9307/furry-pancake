@@ -1,0 +1,23 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop_01 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Number please: ");
+		int number = scan.nextInt();
+		int sum = 1;
+		int x = 1;
+		
+		while (x < number) {
+			sum += x+1; 
+			x++;}
+			
+			System.out.println(sum);			
+		
+	}
+
+}
