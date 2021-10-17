@@ -2,7 +2,7 @@ package selfStudy;
 
 import java.util.Scanner;
 
-public class Loop_01 {
+public class Loop1_01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
