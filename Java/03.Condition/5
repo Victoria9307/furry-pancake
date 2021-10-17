@@ -1,0 +1,33 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Condition5 {
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("Age? : ");
+	int age = scan.nextInt();
+	
+	System.out.println("M or F? : ");
+	String g = scan.next();
+
+	if (age <= 19 && g.equalsIgnoreCase("F")) {
+		System.out.println("Girl");
+		
+	} else if (age <= 19 && g.equalsIgnoreCase("M")) {
+		System.out.println("BOY");
+		
+	} else if (age >= 20 && g.equalsIgnoreCase("F")) {
+		System.out.println("WOMAN");
+		
+	} else if (age >= 20 && g.equalsIgnoreCase("M")) {
+		System.out.println("MAN");
+		
+	} else {
+		System.out.println("Try Again");
+	}
+		
+		}
+}
+	
