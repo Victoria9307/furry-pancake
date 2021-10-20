@@ -1,0 +1,26 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+class Loop1_04 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Number please (Below 100 only) : ");
+		int n = scan.nextInt();
+		int x = 1;
+		int sum = 0;
+
+		while (x < n+1) {
+
+			if (n >= 100) {
+				System.out.println("Try again, number below 100 only.");
+				break; 
+			}
+			sum += x;
+			x++; 		
+		}
+		System.out.println(sum);
+
+	}
+}
