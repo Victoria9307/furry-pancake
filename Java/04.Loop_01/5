@@ -1,0 +1,23 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop_05 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = 0;
+		
+		while (true) {
+			System.out.println("Number please : ");
+			
+			int n = scan.nextInt();
+			if (n == 0)
+				break;
+			else if (n% 3 == 0 || n%5 == 0) {
+				count++;
+			}
+		}
+		System.out.println(count);
+	} 
+}
