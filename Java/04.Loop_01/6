@@ -1,0 +1,29 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop_06 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		while (true) {
+			System.out.println("Base? : ");
+			double b = scan.nextInt();
+
+			System.out.println("Height? : ");
+			double h = scan.nextInt();
+
+			double w = b*h/2;
+
+			System.out.println("Triangle Width = "+ w);
+
+			System.out.println("Continue? : ");
+			String ans = scan.next();
+			if (!ans.equalsIgnoreCase("Y")) {
+				break;
+			}			
+
+		}
+
+	}
+}
