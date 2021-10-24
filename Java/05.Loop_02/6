@@ -1,0 +1,21 @@
+
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop_02_06 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Number please : ");
+		int n = scan.nextInt();
+
+		for (int x=1; n*x <= 100; x++) {
+			System.out.printf(n*x +" ");
+			
+			if ((n*x)%10 == 0) {
+				break;
+			}
+		}
+	}
+}
