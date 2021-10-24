@@ -1,0 +1,15 @@
+package selfStudy;
+
+public class Loop1_07 {
+
+	public static void main(String[] args) {
+
+for (int left =0; left <5; left++) {
+	for (int down =left+2; down <= left+6; down++) {
+		System.out.print(down+" ");
+	}
+	System.out.println();
+	}
+System.out.println();
+	} 
+}
