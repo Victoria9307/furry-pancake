@@ -1,0 +1,21 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop_02_04 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Number please : ");
+		int line = scan.nextInt();
+
+
+		for (int i = 1; i <= line ; i++) {
+			for (int x = 1; x <= i; x++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
