@@ -1,0 +1,22 @@
+package selfStudy;
+
+import java.util.Scanner;
+
+public class Loop2_01 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Number please: ");
+		int num = scan.nextInt();
+		int count =0;
+		int sum =0;
+
+		for (int x =1; sum < num; x++) {
+			if (x % 2==1) {
+				sum += x;
+				count++;
+			}
+		}
+		System.out.println("Number of count = " +count +"\n" + "Sum = "+ sum);
+	}
+}
