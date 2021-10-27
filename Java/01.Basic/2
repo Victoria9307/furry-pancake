@@ -13,4 +13,38 @@ public class Basic2 {
 
 
 
-##
+
+
+
+
+
+
+
+
+## ↑위에는 농담입니다... ↓ 아래가 진짜 답
+
+
+
+
+public class Basic2 {
+	public static void main(String[] args) {
+
+		int length = 6;
+		int depth = 2;
+		char c = 'T';
+		for (int i = 0; i < length; i++) {
+			for (int j = 0; j < length * 2; j++) {
+				if (i < depth) {
+					System.out.print(c);
+				} else if (i >= depth && j < length - 1) {
+					System.out.print(" ");
+				} else if (j < length){
+					for (int k = 0; k < depth; k++) {
+						System.out.print(c);
+					}   
+				}
+			}
+			System.out.println();
+		}
+	}
+}
