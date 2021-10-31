@@ -20,10 +20,10 @@ class Account {
 	public  int getBalance() {
 		return balance; }
 
-	void deposit(int money) {
+	public void deposit(int money) {
 		balance += money; }
 
-	void withdraw (int money) {
+	public void withdraw (int money) {
 		balance -= money; }
 
 	public double calculateInterest() {
