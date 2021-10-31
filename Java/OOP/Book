@@ -1,0 +1,43 @@
+package oopStudy;
+
+class Account {
+	String account;
+	int balance;
+	double interestRate;
+
+	public Account () {
+		account = "441-0290-1203";
+		balance = 500000;
+		interestRate = 7.3; }
+
+
+	public  void setAccount(String account) {
+		this.account = account; }
+
+	public String getAccount() {
+		return account; }
+
+	public  int getBalance() {
+		return balance; }
+
+	void deposit(int money) {
+		balance += money; }
+
+	void withdraw (int money) {
+		balance -= money; }
+
+	public double calculateInterest() {
+		double interest = balance*interestRate*0.01;
+		return interest ; }
+
+	public class AccountTest {
+		public static void main(String args[]) {
+			Account a = new Account();
+			System.out.println("Account ID: "+ a.getAccount() + "  Balance: "+ a.getBalance());
+			a.deposit (20000);
+			System.out.println("Account ID: "+ a.getAccount() + "  Balance: "+ a.getBalance());
+			System.out.println("Interest Rate: "+ a.calculateInterest());
+
+		}
+	}
+}
