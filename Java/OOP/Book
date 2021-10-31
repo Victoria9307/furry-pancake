@@ -1,43 +1,55 @@
 package oopStudy;
 
-class Account {
-	String account;
-	int balance;
-	double interestRate;
+ class Book {
+	String bookName;
+	int bookPrice;
+	double bookDiscountRate;      
 
-	public Account () {
-		account = "441-0290-1203";
-		balance = 500000;
-		interestRate = 7.3; }
+	public Book(String bookName, int bookPrice, double bookDiscountRate) {
+		this.bookName = bookName;
+		this.bookPrice = bookPrice;
+		this.bookDiscountRate = bookDiscountRate; }
 
+	public String getBookName() {
+		return bookName; }
 
-	public  void setAccount(String account) {
-		this.account = account; }
+	public int getBookPrice() {
+		return bookPrice; }
 
-	public String getAccount() {
-		return account; }
+	public void setBookPrice(int bookPrice) {
+		this.bookPrice = bookPrice; }
 
-	public  int getBalance() {
-		return balance; }
+	public double getDiscountBookPrice() {
+		bookPrice = (int) (bookPrice*((double)(100-bookDiscountRate)/100));
+		return bookPrice; }
 
-	void deposit(int money) {
-		balance += money; }
+	public double getBookDiscountRate() {
+		return bookDiscountRate; }
 
-	void withdraw (int money) {
-		balance -= money; }
+	public void setBookDiscountRate(double bookDiscountRate) {
+		this.bookDiscountRate = bookDiscountRate;
 
-	public double calculateInterest() {
-		double interest = balance*interestRate*0.01;
-		return interest ; }
-
-	public class AccountTest {
-		public static void main(String args[]) {
-			Account a = new Account();
-			System.out.println("Account ID: "+ a.getAccount() + "  Balance: "+ a.getBalance());
-			a.deposit (20000);
-			System.out.println("Account ID: "+ a.getAccount() + "  Balance: "+ a.getBalance());
-			System.out.println("Interest Rate: "+ a.calculateInterest());
-
-		}
 	}
 }
+
+class BookTest {
+	public static void main(String[] args) {
+		Book[] book = new Book[3];
+		book[0] = new Book("SQL PLUS", 50000, 5);
+		book[1] = new Book("Java 2.0", 40000, 3);
+		book[2] = new Book("JSP Servlet", 60000, 6);
+
+		int priceBeforeDiscount = 0;
+		double priceAfterDiscount = 0;
+		// array 안에 있는 숫자들을 따로 꺼내서 sum up 하지 못해서 variable 두개 더 만들었습니다. 혹시 다른 방법이 더 있나요? 
+
+		for (int b = 0; b < book.length; b++) { 
+			priceBeforeDiscount += book[b].getBookPrice();
+			priceAfterDiscount += book[b].getDiscountBookPrice();
+			
+			System.out.println(book[b].getBookName() +"  "+ book[b].getBookPrice() + "  " + book[b].getBookDiscountRate() + "%"); }
+			System.out.println("\n"+"Price before discount = " + priceBeforeDiscount + "\n" +"Total price after Discout = " + priceAfterDiscount);
+	}
+}
+
+
